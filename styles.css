@@ -3,48 +3,93 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     transition: all 0.3s ease;
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     color: #000;
-}
-
-.navbar a:hover {
+  }
+  
+  .navbar a:hover {
     color: #f47420;
-}
-
-.hero-section {
+  }
+  
+  .hero-section {
     background-image: url('https://source.unsplash.com/1600x900/?nature');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative;
-}
-
-.hero-section .overlay {
+  }
+  
+  .hero-section .overlay {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.about-section, .contact-section {
+  }
+  
+  .about-section, .contact-section {
     padding: 50px 0;
     background-color: #f4f4f4;
-}
-
-.about-section .card, .contact-section .card {
+  }
+  
+  .about-section .card, .contact-section .card {
     margin-bottom: 30px;
-}
-
-.contact-section form {
+  }
+  
+  .contact-section form {
     max-width: 600px;
     margin: auto;
-}
+  }
+  
+  /* Dark mode styles */
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar.dark-mode {
+    background-color: #444;
+  }
+  
+  #dark-mode-toggle {
+    color: #000;
+  }
+  
+  body.dark-mode #dark-mode-toggle {
+    color: #fff;
+  }
+  
+  body.dark-mode #dark-mode-toggle .fas.fa-sun {
+    display: none;
+  }
+  
+  body.dark-mode #dark-mode-toggle .fas.fa-moon {
+    display: inline;
+  }
+  
+  #dark-mode-toggle .fas.fa-moon {
+    display: none;
+  }
+  
+  .hero-section.dark-mode {
+    background-color: #555;
+  }
+  
+  .about-section.dark-mode, .contact-section.dark-mode {
+    background-color: #666;
+  }
+  
+  body.dark-mode .btn-primary {
+    background-color: #777;
+    border-color: #777;
+  }
+  

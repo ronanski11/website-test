@@ -25,3 +25,12 @@ function initMap() {
 document.getElementById('fab').addEventListener('click', function() {
     window.location.href = 'tel:+1234567890';
 });
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('.navbar').classList.toggle('dark-mode');
+    document.getElementById('dark-mode-toggle').classList.toggle('btn-light');
+    document.getElementById('dark-mode-toggle').classList.toggle('btn-dark');
+  }
+  
+  document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
+  
